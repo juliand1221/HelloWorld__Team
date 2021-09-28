@@ -1,3 +1,7 @@
+body {
+  background: rgba(233, 165, 56, 0.822);
+}
+
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
@@ -23,6 +27,12 @@ button:hover {
   color: black;
 }
 
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: coral;
+}
+
 .contenedor {
-  padding: 45px;
+  padding: 80px;
 }
