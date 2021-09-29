@@ -3,15 +3,17 @@ body {
           box-sizing: border-box;
   font-family: Arial;
   margin: 0;
+  background: #FFDB58;
 }
 
 h2 {
   text-align: center;
 }
 
-.mySlides div img {
+.mySlides img {
   width: 50%;
-  vertical-align: middle;
+  display: block;
+  margin: auto;
 }
 
 .row img {
@@ -33,7 +35,7 @@ h2 {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -57,11 +59,11 @@ h2 {
 }
 
 .numbertext {
-  color: #f2f2f2;
+  color: black;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  top: 1;
 }
 
 .caption-container {

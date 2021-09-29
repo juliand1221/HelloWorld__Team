@@ -6,13 +6,15 @@ body {
     box-sizing: border-box;
     font-family: $Font-b;
     margin: 0;
+    background:#FFDB58;
 }
 h2 {
     text-align: $text-a;
 }
-.mySlides div img{
+.mySlides img{
     width: 50%;
-    vertical-align: middle;
+    display: block;
+    margin: auto;
 }
 .row img {
     width: 100%;
@@ -30,7 +32,7 @@ h2 {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 30%;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -49,11 +51,11 @@ h2 {
     background-color: rgba(0,0,0, 0.8);
 }
 .numbertext {
-    color:#f2f2f2;
+    color:black;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
-    top: 0;
+    top: 1;
 }
 .caption-container {
   text-align: center;
