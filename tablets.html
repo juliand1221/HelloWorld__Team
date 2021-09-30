@@ -5,22 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablets</title>
+    <link rel="stylesheet" href="./formulariosPro.css">
 </head>
 <body>
-    <label for="idProducto"> <b>ID del Producto</b> </label>
-    <input type="text" value="0002" readonly="true" id="idProducto"></br>
+    <div class="contenedor">
+        <label for="idProducto"> <b>ID del Producto</b> </label>
+        <input type="text" value="0002" readonly="true" id="idProducto">
 
-    <label for="descProducto"> <b>Descripción del Producto</b> </label>
-    <textarea name="descProducto" id="descProducto" cols="40" rows="4"></textarea></br>
+        <label for="descProducto"> <b>Descripción del Producto</b> </label></br>
+        <textarea name="descProducto" readonly="readonly" id="descProducto" cols="40" rows="4">La mejor tablet del mundo</textarea></br>
 
-    <label for="vUnitario"> <b>Valor Unitario del Producto</b> </label>
-    <input type="number" value="650000" readonly="true" id="vUnitario"></br>
+        <label for="vUnitario"> <b>Valor Unitario del Producto</b> </label>
+        <input type="number" value="650000" readonly="true" id="vUnitario"></br>
 
-    <label for="disponible"> <b>Disponibilidad del Producto</b> </label></br>
-    <input type="radio" value="Dispoible" readonly="true" id="dispoible" name="dispo">
-    <label for="dispon"> <b>Disponible</b> </label>
-    <input type="radio" value="NDispoible" readonly="true" id="Ndispoible" name="dispo">
-    <label for="Ndispon"> <b>No Disponible</b> </label>
-
+        <div class="opcion">
+            <label for="disponible"> <b>Disponibilidad del Producto</b> </label></br>
+            <div class="sideleft">
+                <input type="radio" value="Dispoible" readonly="true" id="dispoible" name="dispo">
+                <label for="dispon"> <b>Disponible</b> </label>
+            </div>
+            <div class="sideright">
+                <input type="radio" value="NDispoible" readonly="true" id="Ndispoible" name="dispo">
+                <label for="Ndispon"> <b>No Disponible</b> </label>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

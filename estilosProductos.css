@@ -11,13 +11,13 @@ h2 {
 }
 
 .mySlides img {
-  width: 50%;
+  width: 45%;
   display: block;
   margin: auto;
 }
 
 .row img {
-  width: 100%;
+  width: 90%;
 }
 
 .container {
@@ -35,7 +35,7 @@ h2 {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 30%;
+  top: 40%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -60,7 +60,7 @@ h2 {
 
 .numbertext {
   color: black;
-  font-size: 12px;
+  font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   top: 1;
