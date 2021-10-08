@@ -6,7 +6,11 @@ body {
     box-sizing: border-box;
     font-family: $Font-b;
     margin: 0;
-    background:#FFDB58;
+    background: orange;
+}
+.hola {
+    background-color: black;
+    padding: 5px;
 }
 h2 {
     text-align: $text-a;
@@ -59,7 +63,7 @@ h2 {
 }
 .caption-container {
   text-align: center;
-  background-color: #222;
+  background-color: black;
   padding: 2px 16px;
   color: white;
 }

@@ -3,7 +3,12 @@ body {
           box-sizing: border-box;
   font-family: Arial;
   margin: 0;
-  background: #FFDB58;
+  background: orange;
+}
+
+.hola {
+  background-color: black;
+  padding: 5px;
 }
 
 h2 {
@@ -68,7 +73,7 @@ h2 {
 
 .caption-container {
   text-align: center;
-  background-color: #222;
+  background-color: black;
   padding: 2px 16px;
   color: white;
 }
