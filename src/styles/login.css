@@ -1,0 +1,55 @@
+.contenedorLogin {
+  margin: 20px auto;
+  width: 400px;
+  padding: 30px;
+  background-color: #E2C275;
+  border-radius: 80px;
+}
+
+.contenedorLogin h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 30px;
+  color: #FBFBFB;
+  text-align: center;
+}
+
+.contenedorLogin .elemento label {
+  color: #FBFBFB;
+}
+
+.contenedorLogin .elemento input {
+  width: 100%;
+  padding: 8px 0;
+  color: #FBFBFB;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #FBFBFB;
+  margin-bottom: 20px;
+}
+
+.contenedorLogin .elemento input[type="submit"] {
+  background-color: #C36A2D;
+  border: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 15px;
+  margin: 10px;
+}
+
+.olvidaste {
+  text-align: center;
+  color: #FBFBFB;
+  margin-top: 0;
+}
+
+.google {
+  max-width: 28rem;
+  width: 100%;
+}
+
+.buttongoogle {
+  position: relative;
+  width: 100%;
+}
