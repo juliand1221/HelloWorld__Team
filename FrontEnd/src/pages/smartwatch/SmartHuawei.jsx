@@ -1,46 +1,46 @@
 import React from 'react'
-import {Slideshow, Slide, TextoSlide} from 'components/SliderTwo'
+import {Slideshow, Slide, TextoSlide} from '../../components/SliderTwo'
 import 'styles/SliderTwo.css';
-import Sam1 from "media/celulares/samsung1.jpg"
-import Sam2 from "media/celulares/samsung2.jpg"
-import Sam3 from "media/celulares/samsung3.jpg"
+import smhua1 from "media/smartwatch/smart11.jpg"
+import smhua2 from "media/smartwatch/smart2.jpg"
+import smhua3 from "media/smartwatch/smart3.jpg"
 
-export default function CelSamsung() {
-    let i = 1; 
-    let j = 710900;
+export default function SmartHuawei() {
+     let i = 1; 
+    let j = 949900;
 
     const ContadorMas = ()=>{ 
         i = i + 1;
-        j = j + 710900; 
-        let cant = document.getElementById("unidades");
-        let sum = document.getElementById("vUnitario");
+        j = j + 949900; 
+        let cant = document.getElementById("unidadessmarthua");
+        let sum = document.getElementById("vUnitariosmarthua");
 
         cant.value = i;
         sum.value = j;
 
         if(cant.value === 1){
             i=1;
-            j=710900
+            j=949900
             cant.value="1";
-            sum.value="710900"
+            sum.value="949900"
         }
     } 
 
     function ContadormEnos(){ 
         if(i>=2){
             i = i - 1;
-            j = j - 710900; 
-            let cant = document.getElementById("unidades"); 
-            let rest = document.getElementById("vUnitario");
+            j = j - 949900; 
+            let cant = document.getElementById("unidadessmarthua"); 
+            let rest = document.getElementById("vUnitariosmarthua");
 
             cant.value = i;
             rest.value = j;
 
             if(cant.value === 1){
                 i=1;
-                j=710900
+                j=949900
                 cant.value="1";
-                rest.value="710900"
+                rest.value="949900"
             }
         }
             
@@ -48,19 +48,18 @@ export default function CelSamsung() {
 
     return (
         <div>
-            <div> 
-            <div className="container-productos">
+             <div className="cpntainer-productos">
             <div className="produc-aline">
-                <main className="main-slider-produc">
+                <main className="main-slider-produc-tablet">
 			<Slideshow controles={true}>
 				<Slide>
-					<img src={Sam1} alt="Samsung"/>
+					<img src={smhua1} alt="Smart Huawei"/>
 				</Slide>
 				<Slide>
-					<img src={Sam2} alt="Samsung"/>
+					<img src={smhua2} alt="Smart Huawei"/>
 				</Slide>
 				<Slide>
-					<img src={Sam3} alt="Samsung"/>
+					<img src={smhua3} alt="Smart Huawei"/>
 				</Slide>
 			</Slideshow>
             </main>
@@ -69,20 +68,21 @@ export default function CelSamsung() {
       
             <div className="formulario">
                 <form>
-                    <h1>Celular Samsung A10S</h1>
+                    <h1>Smartwatch Huawei Watch GT2 Pro Negro</h1>
 
                     <label for="idProducto"> <b>ID del Producto</b> </label><br></br>
-                    <input type="text" value="C-01" readonly="true" id="idProducto"/>
+                    <input type="text" value="S-03" readonly="true" id="idProducto"/>
                     <br></br>
 
                     <label for="descProducto"> <b>Descripción del Producto</b> </label><br></br>
                     <ul className="descrip-produ">
-                        <li>Tamaño de la pantalla: 6.2 "
-                        (156.9 mm x 75.8 mm x 7.8 mm</li>
-                        <li>Memoria interna: 32 GB</li>
-                        <li>Cámara trasera principal: 13 Mpx</li>
-                        <li>Cámara frontal principal: 8 Mpx</li>
-                        <li>Desbloqueo: Huella dactilar y reconocimiento facial</li>
+                        <li>Tamaño de la pantalla: 1.39 pulgadas</li>
+                        <li>Tipo de pantalla: Digital</li>
+                        <li>GPS integrado: Sí</li>
+                        <li>Bluetooth: 5.0</li>
+                        <li>Tipo de carga: MicroUSB</li>
+                        <li>Batería	455 mAh</li>
+                        <li>Compatibilidad: Android 4.4 o superior / iOS 8.0 o superior</li>
                     </ul>
                     <br></br>
 
@@ -91,19 +91,18 @@ export default function CelSamsung() {
                     <br></br>
 
                     <label for="vUnitario"> <b>Valor Unitario del Producto</b> </label><br></br>
-                    $<input type="number" value="710.900" readonly="true" id="vUnitario"/>
+                    $<input type="number" value="949.900" readonly="true" id="vUnitariosmarthua"/>
                     <br></br>
 
                     <label for="cantidad"> <b>Unidades</b> </label><br></br>
                     <button for="btn-" type="button" id="btn-" onClick={ContadormEnos}>-</button>
-                    <input id="unidades" type="number" value="1" />
+                    <input id="unidadessmarthua" type="number" value="1" />
                     <button for="btn+" type="button" id="btn+" onClick={ContadorMas}>+</button>
             
                     <div className="boton-pro">
                         <button for="compra" type="button" id="comprar">Comprar ahora</button>
                     </div>
                 </form>
-            </div>
             </div>
             </div>
         </div>

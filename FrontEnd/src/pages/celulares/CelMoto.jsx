@@ -1,66 +1,64 @@
 import React from 'react'
 import {Slideshow, Slide, TextoSlide} from 'components/SliderTwo'
 import 'styles/SliderTwo.css';
-import Sam1 from "media/celulares/samsung1.jpg"
-import Sam2 from "media/celulares/samsung2.jpg"
-import Sam3 from "media/celulares/samsung3.jpg"
+import moto1 from "media/celulares/moto1.jpg"
+import moto2 from "media/celulares/moto2.jpg"
+import moto3 from "media/celulares/moto3.jpg"
 
-export default function CelSamsung() {
+export default function CelMoto() {
     let i = 1; 
-    let j = 710900;
+    let j = 619900;
 
     const ContadorMas = ()=>{ 
         i = i + 1;
-        j = j + 710900; 
-        let cant = document.getElementById("unidades");
-        let sum = document.getElementById("vUnitario");
+        j = j + 619900; 
+        let cant = document.getElementById("unidadesmoto");
+        let sum = document.getElementById("vUnitariomoto");
 
         cant.value = i;
         sum.value = j;
 
         if(cant.value === 1){
             i=1;
-            j=710900
+            j=619900
             cant.value="1";
-            sum.value="710900"
+            sum.value="619900"
         }
     } 
 
     function ContadormEnos(){ 
         if(i>=2){
             i = i - 1;
-            j = j - 710900; 
-            let cant = document.getElementById("unidades"); 
-            let rest = document.getElementById("vUnitario");
+            j = j - 619900; 
+            let cant = document.getElementById("unidadesmoto"); 
+            let rest = document.getElementById("vUnitariomoto");
 
             cant.value = i;
             rest.value = j;
 
             if(cant.value === 1){
                 i=1;
-                j=710900
+                j=619900
                 cant.value="1";
-                rest.value="710900"
+                rest.value="619900"
             }
         }
             
     }
-
     return (
         <div>
-            <div> 
-            <div className="container-productos">
+           <div className="container-productos">
             <div className="produc-aline">
                 <main className="main-slider-produc">
 			<Slideshow controles={true}>
 				<Slide>
-					<img src={Sam1} alt="Samsung"/>
+					<img src={moto1} alt="Samsung"/>
 				</Slide>
 				<Slide>
-					<img src={Sam2} alt="Samsung"/>
+					<img src={moto2} alt="Samsung"/>
 				</Slide>
 				<Slide>
-					<img src={Sam3} alt="Samsung"/>
+					<img src={moto3} alt="Samsung"/>
 				</Slide>
 			</Slideshow>
             </main>
@@ -69,20 +67,19 @@ export default function CelSamsung() {
       
             <div className="formulario">
                 <form>
-                    <h1>Celular Samsung A10S</h1>
+                    <h1>Celular MOTOROLA G20 64GB Rosado</h1>
 
                     <label for="idProducto"> <b>ID del Producto</b> </label><br></br>
-                    <input type="text" value="C-01" readonly="true" id="idProducto"/>
+                    <input type="text" value="C-04" readonly="true" id="idProducto"/>
                     <br></br>
 
                     <label for="descProducto"> <b>Descripción del Producto</b> </label><br></br>
                     <ul className="descrip-produ">
-                        <li>Tamaño de la pantalla: 6.2 "
-                        (156.9 mm x 75.8 mm x 7.8 mm</li>
-                        <li>Memoria interna: 32 GB</li>
-                        <li>Cámara trasera principal: 13 Mpx</li>
-                        <li>Cámara frontal principal: 8 Mpx</li>
-                        <li>Desbloqueo: Huella dactilar y reconocimiento facial</li>
+                        <li>Sistema de 4 cámaras con 48 MP</li>
+                        <li>Pantalla fluida de 90 Hz con 6.5</li>
+                        <li>Hasta 2 días de batería</li>
+                        <li>Lector de Huella </li>
+                        <li>Reconocimiento Facial </li>
                     </ul>
                     <br></br>
 
@@ -90,13 +87,13 @@ export default function CelSamsung() {
                     <input type="text" value="Disponible" readonly="true" id="idProducto"/>
                     <br></br>
 
-                    <label for="vUnitario"> <b>Valor Unitario del Producto</b> </label><br></br>
-                    $<input type="number" value="710.900" readonly="true" id="vUnitario"/>
+                    <label for="vUnitariomoto"> <b>Valor Unitario del Producto</b> </label><br></br>
+                    $<input type="number" value="619.900" readonly="true" id="vUnitariomoto"/>
                     <br></br>
 
                     <label for="cantidad"> <b>Unidades</b> </label><br></br>
                     <button for="btn-" type="button" id="btn-" onClick={ContadormEnos}>-</button>
-                    <input id="unidades" type="number" value="1" />
+                    <input id="unidadesmoto" type="number" value="1" />
                     <button for="btn+" type="button" id="btn+" onClick={ContadorMas}>+</button>
             
                     <div className="boton-pro">
@@ -104,8 +101,7 @@ export default function CelSamsung() {
                     </div>
                 </form>
             </div>
-            </div>
-            </div>
+            </div> 
         </div>
     )
 }

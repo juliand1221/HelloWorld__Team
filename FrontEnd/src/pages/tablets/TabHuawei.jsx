@@ -1,17 +1,18 @@
 import React from 'react'
-import {Slideshow, Slide, TextoSlide} from 'components/SliderTwo'
+import {Slideshow, Slide, TextoSlide} from '../../components/SliderTwo'
 import 'styles/SliderTwo.css';
-import Sam1 from "media/celulares/samsung1.jpg"
-import Sam2 from "media/celulares/samsung2.jpg"
-import Sam3 from "media/celulares/samsung3.jpg"
+import tab1 from "media/tablets/table1.jpg"
+import tab2 from "media/tablets/table2.jpg"
+import tab3 from "media/tablets/table3.jpg"
 
-export default function CelSamsung() {
+
+export default function TabSamsung() {
     let i = 1; 
-    let j = 710900;
+    let j = 529900;
 
     const ContadorMas = ()=>{ 
         i = i + 1;
-        j = j + 710900; 
+        j = j + 529900; 
         let cant = document.getElementById("unidades");
         let sum = document.getElementById("vUnitario");
 
@@ -20,16 +21,16 @@ export default function CelSamsung() {
 
         if(cant.value === 1){
             i=1;
-            j=710900
+            j=529900
             cant.value="1";
-            sum.value="710900"
+            sum.value="529900"
         }
     } 
 
     function ContadormEnos(){ 
         if(i>=2){
             i = i - 1;
-            j = j - 710900; 
+            j = j - 529900; 
             let cant = document.getElementById("unidades"); 
             let rest = document.getElementById("vUnitario");
 
@@ -38,29 +39,27 @@ export default function CelSamsung() {
 
             if(cant.value === 1){
                 i=1;
-                j=710900
+                j=529900
                 cant.value="1";
-                rest.value="710900"
+                rest.value="529900"
             }
         }
             
     }
-
     return (
         <div>
-            <div> 
-            <div className="container-productos">
+           <div className="container-productos">
             <div className="produc-aline">
-                <main className="main-slider-produc">
+                <main className="main-slider-produc-tablet">
 			<Slideshow controles={true}>
 				<Slide>
-					<img src={Sam1} alt="Samsung"/>
+					<img src={tab1} alt="Huawei"/>
 				</Slide>
 				<Slide>
-					<img src={Sam2} alt="Samsung"/>
+					<img src={tab2} alt="Huawei"/>
 				</Slide>
 				<Slide>
-					<img src={Sam3} alt="Samsung"/>
+					<img src={tab3} alt="Huawei"/>
 				</Slide>
 			</Slideshow>
             </main>
@@ -69,20 +68,22 @@ export default function CelSamsung() {
       
             <div className="formulario">
                 <form>
-                    <h1>Celular Samsung A10S</h1>
+                    <h1>TABLET HUAWEI MATEPAD T10</h1>
 
                     <label for="idProducto"> <b>ID del Producto</b> </label><br></br>
-                    <input type="text" value="C-01" readonly="true" id="idProducto"/>
+                    <input type="text" value="T-01" readonly="true" id="idProducto"/>
                     <br></br>
 
                     <label for="descProducto"> <b>Descripción del Producto</b> </label><br></br>
                     <ul className="descrip-produ">
-                        <li>Tamaño de la pantalla: 6.2 "
-                        (156.9 mm x 75.8 mm x 7.8 mm</li>
-                        <li>Memoria interna: 32 GB</li>
-                        <li>Cámara trasera principal: 13 Mpx</li>
-                        <li>Cámara frontal principal: 8 Mpx</li>
-                        <li>Desbloqueo: Huella dactilar y reconocimiento facial</li>
+                        <li>Pantalla: 9.7" HD</li>
+                        <li>Resolución cámara principal: 5 MP - frontal: 2 MP</li>
+                        <li>Procesador: Kirin 710 Octa-Core</li>
+                        <li>Memoria RAM: 2 GB</li>
+                        <li>Almacenamiento: 32 GB</li>
+                        <li>Sistema operativo: Android 10 / emui 10.1</li>
+                        <li>Batería: 5100 mAh</li>
+                        <li>Conectividad: Wifi - Bluetooth 5.1</li>
                     </ul>
                     <br></br>
 
@@ -91,7 +92,7 @@ export default function CelSamsung() {
                     <br></br>
 
                     <label for="vUnitario"> <b>Valor Unitario del Producto</b> </label><br></br>
-                    $<input type="number" value="710.900" readonly="true" id="vUnitario"/>
+                    $<input type="number" value="469.900" readonly="true" id="vUnitario"/>
                     <br></br>
 
                     <label for="cantidad"> <b>Unidades</b> </label><br></br>
@@ -104,8 +105,7 @@ export default function CelSamsung() {
                     </div>
                 </form>
             </div>
-            </div>
-            </div>
+            </div> 
         </div>
     )
 }

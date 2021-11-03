@@ -1,66 +1,64 @@
 import React from 'react'
 import {Slideshow, Slide, TextoSlide} from 'components/SliderTwo'
 import 'styles/SliderTwo.css';
-import Sam1 from "media/celulares/samsung1.jpg"
-import Sam2 from "media/celulares/samsung2.jpg"
-import Sam3 from "media/celulares/samsung3.jpg"
+import iphone1 from "media/celulares/iphone1.jpg"
+import iphone2 from "media/celulares/iphone2.jpg"
+import iphone3 from "media/celulares/iphone3.jpg"
 
-export default function CelSamsung() {
+export default function CelIphone() {
     let i = 1; 
-    let j = 710900;
+    let j = 5320000;
 
     const ContadorMas = ()=>{ 
         i = i + 1;
-        j = j + 710900; 
-        let cant = document.getElementById("unidades");
-        let sum = document.getElementById("vUnitario");
+        j = j + 5320000; 
+        let cant = document.getElementById("unidadesIp");
+        let sum = document.getElementById("vUnitarioIp");
 
         cant.value = i;
         sum.value = j;
 
         if(cant.value === 1){
             i=1;
-            j=710900
+            j=5320000
             cant.value="1";
-            sum.value="710900"
+            sum.value="5320000"
         }
     } 
 
     function ContadormEnos(){ 
         if(i>=2){
             i = i - 1;
-            j = j - 710900; 
-            let cant = document.getElementById("unidades"); 
-            let rest = document.getElementById("vUnitario");
+            j = j - 5320000; 
+            let cant = document.getElementById("unidadesIp"); 
+            let rest = document.getElementById("vUnitarioIp");
 
             cant.value = i;
             rest.value = j;
 
             if(cant.value === 1){
                 i=1;
-                j=710900
+                j=5320000
                 cant.value="1";
-                rest.value="710900"
+                rest.value="5320000"
             }
         }
             
     }
-
     return (
         <div>
-            <div> 
-            <div className="container-productos">
+           <div className="container-productos">
             <div className="produc-aline">
                 <main className="main-slider-produc">
 			<Slideshow controles={true}>
 				<Slide>
-					<img src={Sam1} alt="Samsung"/>
+					<img src={iphone1} alt="Iphone"/>
 				</Slide>
 				<Slide>
-					<img src={Sam2} alt="Samsung"/>
+					<img src={iphone2} alt="Iphone"/>
 				</Slide>
 				<Slide>
-					<img src={Sam3} alt="Samsung"/>
+					<img src={iphone3} alt="Iphone"/>
 				</Slide>
 			</Slideshow>
             </main>
@@ -69,20 +67,20 @@ export default function CelSamsung() {
       
             <div className="formulario">
                 <form>
-                    <h1>Celular Samsung A10S</h1>
+                    <h1>iPhone 13 mini 512GB Azul Medianoche</h1>
 
                     <label for="idProducto"> <b>ID del Producto</b> </label><br></br>
-                    <input type="text" value="C-01" readonly="true" id="idProducto"/>
+                    <input type="text" value="C-03" readonly="true" id="idProducto"/>
                     <br></br>
 
                     <label for="descProducto"> <b>Descripción del Producto</b> </label><br></br>
                     <ul className="descrip-produ">
-                        <li>Tamaño de la pantalla: 6.2 "
-                        (156.9 mm x 75.8 mm x 7.8 mm</li>
-                        <li>Memoria interna: 32 GB</li>
-                        <li>Cámara trasera principal: 13 Mpx</li>
-                        <li>Cámara frontal principal: 8 Mpx</li>
-                        <li>Desbloqueo: Huella dactilar y reconocimiento facial</li>
+                        <li>A15, Un chip superrápido 
+                            que deja atrás a la competencia</li>
+                        <li>Pantalla Super Retina XDR 5.4"</li>
+                        <li>Modo Cine: Te permite editar profundidad luego de la toma</li>
+                        <li>Almacenamiento, capacidad mínima del iPhone 13 - 128GB</li>
+                        <li>Ceramic Shield: el vidrio más resistente de un smartphone</li>
                     </ul>
                     <br></br>
 
@@ -91,12 +89,12 @@ export default function CelSamsung() {
                     <br></br>
 
                     <label for="vUnitario"> <b>Valor Unitario del Producto</b> </label><br></br>
-                    $<input type="number" value="710.900" readonly="true" id="vUnitario"/>
+                    $<input type="number" value="5320.000" readonly="true" id="vUnitarioIp"/>
                     <br></br>
 
                     <label for="cantidad"> <b>Unidades</b> </label><br></br>
                     <button for="btn-" type="button" id="btn-" onClick={ContadormEnos}>-</button>
-                    <input id="unidades" type="number" value="1" />
+                    <input id="unidadesIp" type="number" value="1" />
                     <button for="btn+" type="button" id="btn+" onClick={ContadorMas}>+</button>
             
                     <div className="boton-pro">
@@ -104,8 +102,7 @@ export default function CelSamsung() {
                     </div>
                 </form>
             </div>
-            </div>
-            </div>
+            </div> 
         </div>
     )
 }

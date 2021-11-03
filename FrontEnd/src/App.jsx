@@ -1,11 +1,11 @@
 import './styles/App.css';
 import Index from "./pages/Principal";
 import PagCelular from 'pages/celulares/Princelulares';
-import PagTablet from 'pages/tablets';
-import ProPorta from 'pages/portatiles';
-import ProConsol from 'pages/consola';
-import ProSmart from 'pages/smartwatch';
-import ProBafle from 'pages/parlantes';
+import PagTablet from 'pages/tablets/PrinTablets';
+import ProPorta from 'pages/Portatiles/Prinportatiles';
+import ProConsol from 'pages/consolas/Princonsola';
+import ProSmart from 'pages/smartwatch/PrinSmartwatch';
+import ProBafle from 'pages/parlantes/Prinparlantes';
 import Layout from './layouts/Layout';
 import ProducVario from 'pages/articulos';
 import Login from 'pages/Login';

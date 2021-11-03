@@ -151,8 +151,12 @@ header .highlight, header .current  a {
 	color: white;
 }
 
-#unidades {
+#unidades, #unidadesIp, #unidadesmoto,#unidadesvi, #unidadestab, #unidadesipad, #unidadesLen {
 	text-align: center;
+}
+#unidadesAsus, #unidadesacer, #unidadeshua, #unidadesplay, #unidadesxbox,
+#unidadesappwatch, #unidadessmartsam, #unidadessmarthua, #unidadesbeat{
+    text-align: center;
 }
 .boton-pro button{
     background-color: #C36A2D;
@@ -161,7 +165,7 @@ header .highlight, header .current  a {
     margin: 8px;
     border: none;
     cursor: pointer;
-    width: 40%;
+    width: 50%;
 	font-family: 'Poppins', sans-serif;
 }
 .boton-pro button:hover{
