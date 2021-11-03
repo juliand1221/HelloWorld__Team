@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.body-slidertwo {
+	font-family: 'Poppins', sans-serif;
+}
+
+.main-slider-two {
+	max-width: 800px;
+	margin: 50px auto;
+	overflow: hidden;
+    
+}
+.main-slider-produc {
+	max-width: 400px;
+	margin: 70px auto;
+	overflow: hidden;
+    
+}
+.produc-aline {
+    float: right;
+    padding: 0 150px;
+}
+.container-productos{
+	margin: 1px;
+}
+.main-slider-produc-tablet {
+	max-width: 400px;
+	margin: 100px auto;
+	overflow: hidden;
+    
+}
+.main-slider-produc-portatil {
+	max-width: 400px;
+	margin: 90px auto;
+	overflow: hidden;
+    
+}
