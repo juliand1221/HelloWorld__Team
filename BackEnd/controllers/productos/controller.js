@@ -10,9 +10,10 @@ const queryAllProducts = async (callback) => {
 const crearProducto = async (datosProducto, callback) => {
   if (
     Object.keys(datosProducto).includes('nombre') &&
-    Object.keys(datosProducto).includes('estado') &&
+    Object.keys(datosProducto).includes('descripcion') &&
     Object.keys(datosProducto).includes('precio') &&
-    Object.keys(datosProducto).includes('unidades') 
+    Object.keys(datosProducto).includes('unidades') &&
+    Object.keys(datosProducto).includes('estado')
   ) {
     const baseDeDatos = getDB();
     await baseDeDatos.collection('Productos').insertOne(datosProducto, callback);
