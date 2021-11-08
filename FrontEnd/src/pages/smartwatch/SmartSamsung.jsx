@@ -97,10 +97,7 @@ export default function SmartSamsung() {
                     <button for="btn-" type="button" id="btn-" onClick={ContadormEnos}>-</button>
                     <input id="unidadessmartsam" type="number" value="1" />
                     <button for="btn+" type="button" id="btn+" onClick={ContadorMas}>+</button>
-            
-                    <div className="boton-pro">
-                        <button for="compra" type="button" id="comprar">Comprar ahora</button>
-                    </div>
+   
                 </form>
             </div>
             </div>

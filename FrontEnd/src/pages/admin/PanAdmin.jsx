@@ -4,7 +4,7 @@ export default function PanAdmin() {
     return (
         <div className="body">
             <main>
-                <div>
+                <div className="helper">
                     Bienvenidos al panel de administración
                 </div>
             </main>

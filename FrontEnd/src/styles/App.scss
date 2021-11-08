@@ -263,13 +263,15 @@ $menu-width-smartphone: 230px;
 //  	position:relative;
 //  	height:100vh;
 	
-//  	.helper{
-//  		background:rgba(0,0,0,0.2);
-//  		color:$color-1st;
-//  		position:absolute;
-//  		top:39%;
-//  		left:33%;
-// 		;
+.helper{
+    position:relative;
+    height:100vh;
+	background:rgba(0,0,0,0.2);
+	color:$color-1st;
+	position:absolute;
+	top:39%;
+	left:33%;
+}
 //  		transform:translate3d(-50%,-50%,0);
 //  		padding:1.2em 2em;
 //  		text-align:center;
